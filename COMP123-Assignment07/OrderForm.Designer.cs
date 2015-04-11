@@ -37,7 +37,6 @@
             this.healToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MovieSelectedGroupBox = new System.Windows.Forms.GroupBox();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
@@ -55,10 +54,11 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
+            this.PictureBoxOrderForm = new System.Windows.Forms.PictureBox();
             this.MenuStrip.SuspendLayout();
             this.MovieSelectedGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.YourOrderGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxOrderForm)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuStrip
@@ -123,7 +123,7 @@
             // 
             // MovieSelectedGroupBox
             // 
-            this.MovieSelectedGroupBox.Controls.Add(this.PictureBox);
+            this.MovieSelectedGroupBox.Controls.Add(this.PictureBoxOrderForm);
             this.MovieSelectedGroupBox.Controls.Add(this.textBox1);
             this.MovieSelectedGroupBox.Controls.Add(this.CategoryLabel);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleTextBox);
@@ -135,14 +135,6 @@
             this.MovieSelectedGroupBox.TabIndex = 1;
             this.MovieSelectedGroupBox.TabStop = false;
             this.MovieSelectedGroupBox.Text = "Movie Selected";
-            // 
-            // PictureBox
-            // 
-            this.PictureBox.Location = new System.Drawing.Point(11, 165);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(282, 323);
-            this.PictureBox.TabIndex = 4;
-            this.PictureBox.TabStop = false;
             // 
             // textBox1
             // 
@@ -316,6 +308,14 @@
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
             // 
+            // PictureBoxOrderForm
+            // 
+            this.PictureBoxOrderForm.Location = new System.Drawing.Point(11, 165);
+            this.PictureBoxOrderForm.Name = "PictureBoxOrderForm";
+            this.PictureBoxOrderForm.Size = new System.Drawing.Size(282, 323);
+            this.PictureBoxOrderForm.TabIndex = 4;
+            this.PictureBoxOrderForm.TabStop = false;
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -340,9 +340,9 @@
             this.MenuStrip.PerformLayout();
             this.MovieSelectedGroupBox.ResumeLayout(false);
             this.MovieSelectedGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.YourOrderGroupBox.ResumeLayout(false);
             this.YourOrderGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxOrderForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,7 +363,7 @@
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label CategoryLabel;
-        private System.Windows.Forms.PictureBox PictureBox;
+        private System.Windows.Forms.PictureBox PictureBoxOrderForm;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.Button StreamButton;

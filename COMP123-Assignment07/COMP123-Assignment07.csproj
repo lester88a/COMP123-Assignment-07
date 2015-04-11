@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieClass.cs" />
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StreamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +87,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StreamForm.resx">
       <DependentUpon>StreamForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +108,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MovieIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSC-Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CedarRapids.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompanyMen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeathRace2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GnomeoAndJuliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IamNumberFour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Just_Go_with_It.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoStringsAttached.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RealSteel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sanctum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Season_of_the_Witch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheDilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheEagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheGreenHornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheMechanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheOtherWoman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheRite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheRoommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thewayback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaitingforForever.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
