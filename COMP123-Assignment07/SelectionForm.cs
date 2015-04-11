@@ -85,7 +85,7 @@ namespace COMP123_Assignment07
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            OrderForm newOrderForm = new OrderForm();
+            OrderForm newOrderForm = new OrderForm(movies[this._movieIndex]);
             this.Hide();
             newOrderForm.Owner = this;
             newOrderForm.Show();

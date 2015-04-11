@@ -37,7 +37,8 @@
             this.healToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MovieSelectedGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PictureBoxOrderForm = new System.Windows.Forms.PictureBox();
+            this.CategoryTextBox = new System.Windows.Forms.TextBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.TitleLabel = new System.Windows.Forms.Label();
@@ -47,22 +48,24 @@
             this.GrandTotalLabel = new System.Windows.Forms.Label();
             this.SaleTaxTextBox = new System.Windows.Forms.TextBox();
             this.SaleTaxLabel = new System.Windows.Forms.Label();
-            this.SubtitleTextBox = new System.Windows.Forms.TextBox();
-            this.SubtitleLabel = new System.Windows.Forms.Label();
+            this.SubTotalTextBox = new System.Windows.Forms.TextBox();
+            this.SubTotalLabel = new System.Windows.Forms.Label();
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
-            this.Cancel = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
-            this.PictureBoxOrderForm = new System.Windows.Forms.PictureBox();
+            this.AdditionalChargeTextBox = new System.Windows.Forms.TextBox();
+            this.AdditionalChargeLabel = new System.Windows.Forms.Label();
             this.MenuStrip.SuspendLayout();
             this.MovieSelectedGroupBox.SuspendLayout();
-            this.YourOrderGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxOrderForm)).BeginInit();
+            this.YourOrderGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuStrip
             // 
+            this.MenuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.healToolStripMenuItem});
@@ -93,6 +96,7 @@
             // 
             // steamToolStripMenuItem
             // 
+            this.steamToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.steamToolStripMenuItem.Name = "steamToolStripMenuItem";
             this.steamToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.steamToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
@@ -124,7 +128,7 @@
             // MovieSelectedGroupBox
             // 
             this.MovieSelectedGroupBox.Controls.Add(this.PictureBoxOrderForm);
-            this.MovieSelectedGroupBox.Controls.Add(this.textBox1);
+            this.MovieSelectedGroupBox.Controls.Add(this.CategoryTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.CategoryLabel);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleLabel);
@@ -136,17 +140,26 @@
             this.MovieSelectedGroupBox.TabStop = false;
             this.MovieSelectedGroupBox.Text = "Movie Selected";
             // 
-            // textBox1
+            // PictureBoxOrderForm
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(11, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(282, 23);
-            this.textBox1.TabIndex = 3;
+            this.PictureBoxOrderForm.Location = new System.Drawing.Point(11, 165);
+            this.PictureBoxOrderForm.Name = "PictureBoxOrderForm";
+            this.PictureBoxOrderForm.Size = new System.Drawing.Size(282, 323);
+            this.PictureBoxOrderForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxOrderForm.TabIndex = 4;
+            this.PictureBoxOrderForm.TabStop = false;
+            // 
+            // CategoryTextBox
+            // 
+            this.CategoryTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CategoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CategoryTextBox.Enabled = false;
+            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryTextBox.Location = new System.Drawing.Point(11, 125);
+            this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
+            this.CategoryTextBox.Size = new System.Drawing.Size(282, 23);
+            this.CategoryTextBox.TabIndex = 3;
             // 
             // CategoryLabel
             // 
@@ -182,19 +195,21 @@
             // 
             // YourOrderGroupBox
             // 
+            this.YourOrderGroupBox.Controls.Add(this.AdditionalChargeTextBox);
+            this.YourOrderGroupBox.Controls.Add(this.AdditionalChargeLabel);
             this.YourOrderGroupBox.Controls.Add(this.CheckBox);
             this.YourOrderGroupBox.Controls.Add(this.GrandTotalTextBox);
             this.YourOrderGroupBox.Controls.Add(this.GrandTotalLabel);
             this.YourOrderGroupBox.Controls.Add(this.SaleTaxTextBox);
             this.YourOrderGroupBox.Controls.Add(this.SaleTaxLabel);
-            this.YourOrderGroupBox.Controls.Add(this.SubtitleTextBox);
-            this.YourOrderGroupBox.Controls.Add(this.SubtitleLabel);
+            this.YourOrderGroupBox.Controls.Add(this.SubTotalTextBox);
+            this.YourOrderGroupBox.Controls.Add(this.SubTotalLabel);
             this.YourOrderGroupBox.Controls.Add(this.CostTextBox);
             this.YourOrderGroupBox.Controls.Add(this.CostLabel);
             this.YourOrderGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YourOrderGroupBox.Location = new System.Drawing.Point(320, 49);
             this.YourOrderGroupBox.Name = "YourOrderGroupBox";
-            this.YourOrderGroupBox.Size = new System.Drawing.Size(360, 335);
+            this.YourOrderGroupBox.Size = new System.Drawing.Size(360, 390);
             this.YourOrderGroupBox.TabIndex = 2;
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
@@ -203,25 +218,31 @@
             // 
             this.CheckBox.AutoSize = true;
             this.CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBox.Location = new System.Drawing.Point(6, 287);
+            this.CheckBox.Location = new System.Drawing.Point(6, 360);
             this.CheckBox.Name = "CheckBox";
             this.CheckBox.Size = new System.Drawing.Size(351, 24);
             this.CheckBox.TabIndex = 8;
             this.CheckBox.Text = "Order the DVD (adds $10.00 to your order)";
             this.CheckBox.UseVisualStyleBackColor = true;
+            this.CheckBox.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
             // GrandTotalTextBox
             // 
-            this.GrandTotalTextBox.Location = new System.Drawing.Point(175, 222);
+            this.GrandTotalTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GrandTotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GrandTotalTextBox.Enabled = false;
+            this.GrandTotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrandTotalTextBox.Location = new System.Drawing.Point(188, 294);
             this.GrandTotalTextBox.Name = "GrandTotalTextBox";
-            this.GrandTotalTextBox.Size = new System.Drawing.Size(154, 27);
+            this.GrandTotalTextBox.ReadOnly = true;
+            this.GrandTotalTextBox.Size = new System.Drawing.Size(154, 23);
             this.GrandTotalTextBox.TabIndex = 7;
             // 
             // GrandTotalLabel
             // 
             this.GrandTotalLabel.AutoSize = true;
             this.GrandTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrandTotalLabel.Location = new System.Drawing.Point(54, 221);
+            this.GrandTotalLabel.Location = new System.Drawing.Point(67, 293);
             this.GrandTotalLabel.Name = "GrandTotalLabel";
             this.GrandTotalLabel.Size = new System.Drawing.Size(115, 25);
             this.GrandTotalLabel.TabIndex = 6;
@@ -229,50 +250,65 @@
             // 
             // SaleTaxTextBox
             // 
-            this.SaleTaxTextBox.Location = new System.Drawing.Point(175, 177);
+            this.SaleTaxTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.SaleTaxTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SaleTaxTextBox.Enabled = false;
+            this.SaleTaxTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaleTaxTextBox.Location = new System.Drawing.Point(188, 249);
             this.SaleTaxTextBox.Name = "SaleTaxTextBox";
-            this.SaleTaxTextBox.Size = new System.Drawing.Size(154, 27);
+            this.SaleTaxTextBox.ReadOnly = true;
+            this.SaleTaxTextBox.Size = new System.Drawing.Size(154, 23);
             this.SaleTaxTextBox.TabIndex = 5;
             // 
             // SaleTaxLabel
             // 
             this.SaleTaxLabel.AutoSize = true;
             this.SaleTaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaleTaxLabel.Location = new System.Drawing.Point(19, 176);
+            this.SaleTaxLabel.Location = new System.Drawing.Point(32, 248);
             this.SaleTaxLabel.Name = "SaleTaxLabel";
             this.SaleTaxLabel.Size = new System.Drawing.Size(150, 25);
             this.SaleTaxLabel.TabIndex = 4;
             this.SaleTaxLabel.Text = "Sale Tax (13%)";
             // 
-            // SubtitleTextBox
+            // SubTotalTextBox
             // 
-            this.SubtitleTextBox.Location = new System.Drawing.Point(175, 125);
-            this.SubtitleTextBox.Name = "SubtitleTextBox";
-            this.SubtitleTextBox.Size = new System.Drawing.Size(154, 27);
-            this.SubtitleTextBox.TabIndex = 3;
+            this.SubTotalTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.SubTotalTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SubTotalTextBox.Enabled = false;
+            this.SubTotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotalTextBox.Location = new System.Drawing.Point(188, 209);
+            this.SubTotalTextBox.Name = "SubTotalTextBox";
+            this.SubTotalTextBox.ReadOnly = true;
+            this.SubTotalTextBox.Size = new System.Drawing.Size(154, 23);
+            this.SubTotalTextBox.TabIndex = 3;
             // 
-            // SubtitleLabel
+            // SubTotalLabel
             // 
-            this.SubtitleLabel.AutoSize = true;
-            this.SubtitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubtitleLabel.Location = new System.Drawing.Point(92, 124);
-            this.SubtitleLabel.Name = "SubtitleLabel";
-            this.SubtitleLabel.Size = new System.Drawing.Size(77, 25);
-            this.SubtitleLabel.TabIndex = 2;
-            this.SubtitleLabel.Text = "Subtitle";
+            this.SubTotalLabel.AutoSize = true;
+            this.SubTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotalLabel.Location = new System.Drawing.Point(77, 208);
+            this.SubTotalLabel.Name = "SubTotalLabel";
+            this.SubTotalLabel.Size = new System.Drawing.Size(92, 25);
+            this.SubTotalLabel.TabIndex = 2;
+            this.SubTotalLabel.Text = "SubTotal";
             // 
             // CostTextBox
             // 
-            this.CostTextBox.Location = new System.Drawing.Point(175, 56);
+            this.CostTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CostTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CostTextBox.Enabled = false;
+            this.CostTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CostTextBox.Location = new System.Drawing.Point(188, 56);
             this.CostTextBox.Name = "CostTextBox";
-            this.CostTextBox.Size = new System.Drawing.Size(154, 27);
+            this.CostTextBox.ReadOnly = true;
+            this.CostTextBox.Size = new System.Drawing.Size(154, 23);
             this.CostTextBox.TabIndex = 1;
             // 
             // CostLabel
             // 
             this.CostLabel.AutoSize = true;
             this.CostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CostLabel.Location = new System.Drawing.Point(116, 55);
+            this.CostLabel.Location = new System.Drawing.Point(129, 55);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(53, 25);
             this.CostLabel.TabIndex = 0;
@@ -287,16 +323,18 @@
             this.BackButton.TabIndex = 3;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // Cancel
+            // CancelButton
             // 
-            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel.Location = new System.Drawing.Point(486, 506);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(94, 37);
-            this.Cancel.TabIndex = 4;
-            this.Cancel.Text = "Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(420, 506);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(94, 37);
+            this.CancelButton.TabIndex = 4;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // StreamButton
             // 
@@ -308,13 +346,30 @@
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
             // 
-            // PictureBoxOrderForm
+            // AdditionalChargeTextBox
             // 
-            this.PictureBoxOrderForm.Location = new System.Drawing.Point(11, 165);
-            this.PictureBoxOrderForm.Name = "PictureBoxOrderForm";
-            this.PictureBoxOrderForm.Size = new System.Drawing.Size(282, 323);
-            this.PictureBoxOrderForm.TabIndex = 4;
-            this.PictureBoxOrderForm.TabStop = false;
+            this.AdditionalChargeTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AdditionalChargeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdditionalChargeTextBox.Enabled = false;
+            this.AdditionalChargeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdditionalChargeTextBox.Location = new System.Drawing.Point(188, 125);
+            this.AdditionalChargeTextBox.Name = "AdditionalChargeTextBox";
+            this.AdditionalChargeTextBox.ReadOnly = true;
+            this.AdditionalChargeTextBox.Size = new System.Drawing.Size(154, 23);
+            this.AdditionalChargeTextBox.TabIndex = 10;
+            this.AdditionalChargeTextBox.Text = "$10.00";
+            this.AdditionalChargeTextBox.Visible = false;
+            // 
+            // AdditionalChargeLabel
+            // 
+            this.AdditionalChargeLabel.AutoSize = true;
+            this.AdditionalChargeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdditionalChargeLabel.Location = new System.Drawing.Point(14, 124);
+            this.AdditionalChargeLabel.Name = "AdditionalChargeLabel";
+            this.AdditionalChargeLabel.Size = new System.Drawing.Size(168, 25);
+            this.AdditionalChargeLabel.TabIndex = 9;
+            this.AdditionalChargeLabel.Text = "Additional Charge";
+            this.AdditionalChargeLabel.Visible = false;
             // 
             // OrderForm
             // 
@@ -323,7 +378,7 @@
             this.ClientSize = new System.Drawing.Size(692, 555);
             this.ControlBox = false;
             this.Controls.Add(this.StreamButton);
-            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.YourOrderGroupBox);
             this.Controls.Add(this.MovieSelectedGroupBox);
@@ -340,9 +395,9 @@
             this.MenuStrip.PerformLayout();
             this.MovieSelectedGroupBox.ResumeLayout(false);
             this.MovieSelectedGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxOrderForm)).EndInit();
             this.YourOrderGroupBox.ResumeLayout(false);
             this.YourOrderGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxOrderForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,20 +416,22 @@
         private System.Windows.Forms.GroupBox YourOrderGroupBox;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TextBox TitleTextBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CategoryTextBox;
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.PictureBox PictureBoxOrderForm;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button StreamButton;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.TextBox CostTextBox;
-        private System.Windows.Forms.TextBox SubtitleTextBox;
-        private System.Windows.Forms.Label SubtitleLabel;
+        private System.Windows.Forms.TextBox SubTotalTextBox;
+        private System.Windows.Forms.Label SubTotalLabel;
         private System.Windows.Forms.TextBox SaleTaxTextBox;
         private System.Windows.Forms.Label SaleTaxLabel;
         private System.Windows.Forms.TextBox GrandTotalTextBox;
         private System.Windows.Forms.Label GrandTotalLabel;
         private System.Windows.Forms.CheckBox CheckBox;
+        private System.Windows.Forms.TextBox AdditionalChargeTextBox;
+        private System.Windows.Forms.Label AdditionalChargeLabel;
     }
 }

@@ -12,9 +12,72 @@ namespace COMP123_Assignment07
 {
     public partial class OrderForm : Form
     {
-        public OrderForm()
+        //private properties+++++++++++++++++++++++++++++++++++++++++++++++++++
+        private MovieClass _selectMovie;
+
+        //constructor++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public OrderForm(MovieClass selectMovie)
         {
             InitializeComponent();
+
+            //asign the properties of selectd movie to the order form
+            this._selectMovie = selectMovie;
+            TitleTextBox.Text = selectMovie.MovieName;
+            CategoryTextBox.Text = selectMovie.Category;
+            PictureBoxOrderForm.Image = selectMovie.Picture;
+            CostTextBox.Text = "$"+Convert.ToString(selectMovie.Cost);
+            SubTotalTextBox.Text = "$" + Convert.ToString(selectMovie.Cost);
+            SaleTaxTextBox.Text = "$" + Convert.ToString(selectMovie.Cost * 0.13);
+            GrandTotalTextBox.Text = "$" + Convert.ToString(selectMovie.Cost * 1.13);
+            
+        }
+
+        //Back Button function+++++++++++++++++++++++++++++++++++++++++++++++++
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            SelectionForm newSelectionForm = new SelectionForm();
+            //hide the current form
+            this.Hide();
+
+            //show the selectionForm
+            newSelectionForm.Owner = this;
+            newSelectionForm.Show();
+        }
+
+        //cancel button+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //the checkBOx is checked, then the AdditionalChargeTextBox become visible
+                if (CheckBox.Checked == true)
+                {
+                    AdditionalChargeLabel.Visible = true;
+                    AdditionalChargeTextBox.Visible = true;
+                    //add addtional charge to the subtotal and grand total
+                    SubTotalTextBox.Text = "$" + Convert.ToString(this._selectMovie.Cost + 10);
+                    GrandTotalTextBox.Text = "$" + Convert.ToString(this._selectMovie.Cost * 1.13+10);
+                }
+                else if (CheckBox.Checked == false)
+                {
+                    AdditionalChargeLabel.Visible = false;
+                    AdditionalChargeTextBox.Visible = false;
+
+                    //calculate sub and grand total without addtional charge
+                    SubTotalTextBox.Text = "$" + Convert.ToString(this._selectMovie.Cost);
+                    GrandTotalTextBox.Text = "$" + Convert.ToString(this._selectMovie.Cost * 1.13);
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(Convert.ToString( error));
+            }
+            
         }
     }
 }

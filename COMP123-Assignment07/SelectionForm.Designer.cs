@@ -41,7 +41,6 @@
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.NextButton = new System.Windows.Forms.Button();
             this.MovieComboBox = new System.Windows.Forms.ComboBox();
-            this.MovieListBox = new System.Windows.Forms.ListBox();
             this.YourSelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBoxSelectionForm)).BeginInit();
             this.SuspendLayout();
@@ -165,24 +164,15 @@
             // 
             // MovieComboBox
             // 
-            this.MovieComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MovieComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.MovieComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MovieComboBox.FormattingEnabled = true;
             this.MovieComboBox.Location = new System.Drawing.Point(13, 85);
             this.MovieComboBox.Name = "MovieComboBox";
-            this.MovieComboBox.Size = new System.Drawing.Size(199, 28);
+            this.MovieComboBox.Size = new System.Drawing.Size(199, 268);
             this.MovieComboBox.Sorted = true;
             this.MovieComboBox.TabIndex = 5;
             this.MovieComboBox.SelectedIndexChanged += new System.EventHandler(this.MovieComboBox_SelectedIndexChanged);
-            // 
-            // MovieListBox
-            // 
-            this.MovieListBox.FormattingEnabled = true;
-            this.MovieListBox.ItemHeight = 16;
-            this.MovieListBox.Location = new System.Drawing.Point(17, 120);
-            this.MovieListBox.Name = "MovieListBox";
-            this.MovieListBox.Size = new System.Drawing.Size(195, 212);
-            this.MovieListBox.TabIndex = 6;
             // 
             // SelectionForm
             // 
@@ -190,7 +180,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 355);
             this.ControlBox = false;
-            this.Controls.Add(this.MovieListBox);
             this.Controls.Add(this.MovieComboBox);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.YourSelectionGroupBox);
@@ -226,7 +215,6 @@
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.PictureBox MoviePictureBoxSelectionForm;
         private System.Windows.Forms.ComboBox MovieComboBox;
-        private System.Windows.Forms.ListBox MovieListBox;
     }
 }
 
