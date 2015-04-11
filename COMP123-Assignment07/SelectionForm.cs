@@ -59,14 +59,12 @@ namespace COMP123_Assignment07
             foreach (var movie in movies)
             {
                 MovieComboBox.Items.Add(movie.MovieName);
-                MovieListBox.Items.Add(movie.MovieName);
             }
         }
 
         private void MovieComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this._movieIndex = MovieComboBox.SelectedIndex;
-            this._movieIndex = MovieListBox.SelectedIndex;
 
             //sort the name of moives
             movies.Sort();
