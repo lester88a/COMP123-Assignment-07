@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * Course Name: COMP123
- * Project Name: Movies Online Stream
+ * Course Name: COMP123-Assignment07
+ * Application Name: Movies Online Stream
  * Authoer: LI XU 300735072
+ * App Creation Date: April 7, 2015
  * Date: April 11, 2015
  * 
  */
