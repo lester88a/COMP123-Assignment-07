@@ -7,7 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Course Name: COMP123
+ * Project Name: Movies Online Stream
+ * Authoer: LI XU 300735072
+ * Date: April 11, 2015
+ * 
+ */
 namespace COMP123_Assignment07
 {
     public partial class SelectionForm : Form

@@ -14,6 +14,7 @@ namespace COMP123_Assignment07
     {
         //private properties+++++++++++++++++++++++++++++++++++++++++++++++++++
         private MovieClass _selectMovie;
+        
 
         //constructor++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public OrderForm(MovieClass selectMovie)
@@ -50,6 +51,7 @@ namespace COMP123_Assignment07
             Application.Exit();
         }
 
+        //CheckBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private void CheckBox_CheckedChanged(object sender, EventArgs e)
         {
             try
@@ -79,5 +81,20 @@ namespace COMP123_Assignment07
             }
             
         }
+        
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            StreamForm newStreamForm = new StreamForm(this);
+
+            //hide the current form
+            this.Hide();
+            //show the streamForm
+            newStreamForm.Owner = this;
+            newStreamForm.Show();
+        }
+
+        //public propertiess++++++++++++++++++++++++++++++++++++++++++++++++++
+        public string GrandTotal { get { return GrandTotalTextBox.Text; } }
+        public string MovieName { get { return TitleTextBox.Text; } }
     }
 }

@@ -345,6 +345,7 @@
             this.StreamButton.TabIndex = 5;
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // AdditionalChargeTextBox
             // 
